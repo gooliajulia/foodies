@@ -120,7 +120,9 @@ _The **Foodies** MVP will be the basic foundation for this app to grow more comp
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
+![Foodies App Component Tree - MVP](https://user-images.githubusercontent.com/87200663/145629146-ff0b735e-3018-4120-a41b-8b09033b6f93.png)
+
+https://www.figma.com/file/LS0zMmvmhAzhwrxbNYHfRw/Foodies-App-Component-Tree?node-id=0%3A1
 
 [Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
 
