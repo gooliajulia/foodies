@@ -98,21 +98,29 @@ https://www.figma.com/file/l0XKgNHkM2WLHurGWcvPZt/Untitled?node-id=0%3A1
  User Create Account
 ![Register](https://user-images.githubusercontent.com/87200663/145638873-c13190a3-83f4-442e-b994-ba061d5d2642.png)
 
+Layout
+![Layout](https://user-images.githubusercontent.com/87200663/145639031-61d21b64-d1e9-47f2-80ec-003f8452f763.png)
 
- Layout Component for all pages
-![Layout](https://user-images.githubusercontent.com/87200663/145518632-c0da910b-a686-4741-bb10-cf98f7e5fcc1.png)
+User Home Page
+![Home Page](https://user-images.githubusercontent.com/87200663/145638989-c3c94183-cbf5-4f51-b76e-8d6a506f62a0.png)
 
- User Home Page
-![Home Page](https://user-images.githubusercontent.com/87200663/145518645-b8a8b075-86fb-4816-9d14-61d04f1211b1.png)
+User Recipes
+![All One Users Recipes](https://user-images.githubusercontent.com/87200663/145639203-f0c21f75-74d0-4b89-92c6-cf3ee1f1cfeb.png)
 
- User Recipes List
-![All My Recipes](https://user-images.githubusercontent.com/87200663/145518659-c65d306b-d95a-4ce0-8924-17e13f023bd7.png)
+Search Recipes
+![Search](https://user-images.githubusercontent.com/87200663/145639234-cc924d70-ad7b-43dd-a8cc-5c4bb19e185c.png)
 
- Search Screen
-![Search](https://user-images.githubusercontent.com/87200663/145518670-08ed8bca-e67a-46d1-8cca-34a06726e183.png)
+View Single Recipe
+![View Single Recipe](https://user-images.githubusercontent.com/87200663/145639272-aa0b0b5d-8310-4e3e-9606-4c436aa419ce.png)
 
- Single Meal Plan Screen
-![Single Meal Plan](https://user-images.githubusercontent.com/87200663/145518677-e1ce7aac-01b9-4be8-9127-b45156d9c3a2.png)
+Edit Recipe
+![Edit Existing Recipe](https://user-images.githubusercontent.com/87200663/145639342-a8fd1b1f-c744-4c50-b8bb-425289537ec5.png)
+
+Create New Recipe
+![Add New Recipe](https://user-images.githubusercontent.com/87200663/145639442-2397e941-b993-43cb-a1a1-dc7644a8cff9.png)
+
+View All Users
+![View All Users](https://user-images.githubusercontent.com/87200663/145639492-16582ae6-b692-4d47-a671-3f796fed6c06.png)
 
 
 
