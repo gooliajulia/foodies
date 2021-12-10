@@ -209,9 +209,10 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+![Foodies App ERD - MVP](https://user-images.githubusercontent.com/87200663/145628976-7a312734-4ae5-47ce-8f31-32995263ad3b.png)
 
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
+
+https://drive.google.com/file/d/1e7eKmuwdzfcIXd8C9cX0JvsEJt8cozEI/view?usp=sharing
 <br>
 
 ***
