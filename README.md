@@ -133,12 +133,33 @@ _The **Foodies** MVP will be the basic foundation for this app to grow more comp
 src
 |__ assets/
       |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
+      |__ icons
+      |__ color_palletes
 |__ components/
-      |__ Header.jsx
+      |__ Nav.jsx
+      |__ UsersThumbnailList.jsx
+      |__ RecipesThumbnailList.jsx
+|__ containers/
+      |__ MainContainer.jsx
+|__ layouts/
+      |__ Layout.jsx
+|__ screens/
+      |__ Landing.jsx
+      |__ LogIn.jsx
+      |__ CreateAccount.jsx
+      |__ Home.jsx
+      |__ UserRecipes.jsx
+      |__ CreateRecipe.jsx
+      |__ RecipeDetail.jsx
+      |__ EditRecipe.jsx
+      |__ Recipes.jsx
+      |__ Users.jsx
 |__ services/
+      |__ apiConfig.js
+      |__ auth.js
+      |__ recipes.js
+      |__ users.js
+|__ utils/
 
 ```
 
@@ -148,11 +169,39 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Develop Project Pitch    |    H     |     5 hrs      |     8 hrs     |    TBD    |
+| Project Pitch + Approval |    H     |     15 min      |     0     |     TBD     |
+| Create new Rails App    |    H     |     30 min      |     0     |    TBD    |
+| Create Rails Database |    H     |     15 min      |     0      |     TBD     |
+| Scaffold Resources    |    H     |     30 min      |     0     |    TBD    |
+| Create Join Table |    H     |     15 min      |     0      |     TBD     |
+| Check Models, Controllers + Routes    |    H     |     2 hrs      |     0     |    TBD    |
+| Add Dependencies (Bcrypt, JWT, CORS, Faker, Axios, React-router-dom@5.3.0) |    M     |     45 min      |     0      |     TBD     |
+| Write Seed File    |    H     |     1 hr       |     0     |    TBD    |
+| Establish Authentication |    H     |     1 hr      |     0      |     TBD     |
+| Test endpoints with Postman    |    H     |     1 hr      |     0     |    TBD    |
+| Create React App |    H     |     30 min      |     0      |     TBD     |
+| Create Front End File Structure    |    H     |     45 min      |     0     |    TBD    |
+| Create Landing Page |    H     |     1 hr      |     0      |     TBD     |
+| Landing Page Basic CSS |    H     |     1 hr      |     0      |     TBD     |
+| Create Login + Create Account Screens    |    H     |     2 hrs      |     0     |    TBD    |
+| LogIn + CreateAccount Basic CSS |    H     |     1 hr      |     0      |     TBD     |
+| Create Layout Screen    |    H     |     4 hrs      |     0     |    TBD    |
+| Layout Basic CSS |    H     |     1 hr      |     0      |     TBD     |
+| Create User Home Screen Basic |    H     |     3 hrs      |     0      |     TBD     |
+| User Home Screen Basic CSS |    H     |     1 hr      |     0      |     TBD     |
+| Create User Recipes Screen |    H     |     2 hrs      |     0      |     TBD     |
+| User Recipes Screen Basic CSS |    H     |     1 hr      |     0      |     TBD     |
+| Create Create Recipe Screen    |    H     |     2 hrs      |     0     |    TBD    |
+| Create Recipe Basic CSS |    H     |     1 hr      |     0      |     TBD     |
+| Create Recipe Detail Screen |    H     |     2 hrs      |     0      |     TBD     |
+| Recipe Detail Basic CSS |    H     |     1 hr      |     0      |     TBD     |
+| Create Recipe Edit Screen |    H     |     3 hrs      |     0      |     TBD     |
+| Recipe Edit Basic CSS |    H     |     1 hr      |     0      |     TBD     |
+| Create All Users Recipes Screen    |    H     |     2 hrs      |     0     |    TBD    |
+| All Users Recipes Basic CSS |    H     |     1 hr      |     0      |     TBD     |
+| TOTAL               |          |     43 hrs 45 min      |     8 hrs     |     TBD     |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
 <br>
 
@@ -169,15 +218,30 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+- Add association that allows users to like other user's recipes
+- Add ingredients resource associated many to many with recipes
+- Add nutritional benefits resource associated with ingredients
+- Associate ingredients with users as many to many to mimic "pantry" or "fridge" contents
+- All users to make "meal plan's" a combination of meals and snacks for a day
+- Add a feed of other user's recently made/eaten recipes
+- quiz functionality to help a user decide what to eat
+- logic that filters recipes for users based on current items in their pantry
+- Add logic that reccomends meals based on a users mood/state (taking into consideration nutritional benefits of the recipes via its ingredients)
+- Add a timeline feature to footer that tracks time, meals already eaten today, and upcoming meals
+- Reminders at certain times to remind a user to prep, snack or eat a meal
+
 
 ***
 
 ## Code Showcase
 
+TBD - Post MVP Completion
+
 > Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
 
 ## Code Issues & Resolutions
+
+TBD - Post MVP Completion
 
 > Use this section to list of all major issues encountered and their resolution.
 
