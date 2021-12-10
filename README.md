@@ -90,27 +90,27 @@ _The **Foodies** MVP will be the basic foundation for this app to grow more comp
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![Dummy Link](url)
+![Dummy Link](https://imgur.com/WAG7B7X)
 
 - Desktop Landing
 
-![Dummy Link](url)
+![Dummy Link](https://imgur.com/zfkg5iE)
 
 - Desktop Hero
 
-![Dummy Link](url)
+![Dummy Link](https://imgur.com/yiMAlwd)
 
 - Resource Index
 
-![Dummy Link](url)
+![Dummy Link](https://imgur.com/yotY1Kp)
 
 - Resource Show
 
-![Dummy Link](url)
+![Dummy Link](https://imgur.com/OijzfZ6)
 
 - Tablet Resource Index
 
-![Dummy Link](url)
+![Dummy Link](https://imgur.com/4TAlG6e)
 
 - Mobile Resource Index
 
