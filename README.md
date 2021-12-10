@@ -121,7 +121,6 @@ _The **Foodies** MVP will be the basic foundation for this app to grow more comp
 
 https://www.figma.com/file/LS0zMmvmhAzhwrxbNYHfRw/Foodies-App-Component-Tree?node-id=0%3A1
 
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
 
 #### Component Architecture
 
