@@ -28,7 +28,6 @@ This is a student project for General Assembly bootcamp. It is a full stack app 
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
 <br>
 
