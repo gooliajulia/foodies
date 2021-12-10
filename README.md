@@ -90,13 +90,14 @@ _The **Foodies** MVP will be the basic foundation for this app to grow more comp
 https://www.figma.com/file/l0XKgNHkM2WLHurGWcvPZt/Untitled?node-id=0%3A1
 
  Desktop Landing Page
-![Landing Page](https://user-images.githubusercontent.com/87200663/145518481-433d87a9-0673-4198-8a47-675829766050.png)
-
- User Create Account
-![Register](https://user-images.githubusercontent.com/87200663/145518591-4f2e9738-536c-418a-b1a0-c7283824bcb3.png)
+![Landing Page](https://user-images.githubusercontent.com/87200663/145638748-ecf5f8c5-88a8-410f-a7bf-67e4d704dc5d.png)
 
  User Log In
-![Log In](https://user-images.githubusercontent.com/87200663/145518618-efc3a9d7-58ea-4e0f-8bc8-4a7a9580287d.png)
+ ![Log In](https://user-images.githubusercontent.com/87200663/145638796-f9931db5-4854-4c06-bdbb-7d3aa0dba47a.png)
+ 
+ User Create Account
+![Register](https://user-images.githubusercontent.com/87200663/145638873-c13190a3-83f4-442e-b994-ba061d5d2642.png)
+
 
  Layout Component for all pages
 ![Layout](https://user-images.githubusercontent.com/87200663/145518632-c0da910b-a686-4741-bb10-cf98f7e5fcc1.png)
