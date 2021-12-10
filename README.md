@@ -87,35 +87,33 @@ _The **Foodies** MVP will be the basic foundation for this app to grow more comp
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-- Desktop Landing Page
+
+ Desktop Landing Page
 ![Landing Page](https://user-images.githubusercontent.com/87200663/145518481-433d87a9-0673-4198-8a47-675829766050.png)
 
-- User Create Account
+ User Create Account
 ![Register](https://user-images.githubusercontent.com/87200663/145518591-4f2e9738-536c-418a-b1a0-c7283824bcb3.png)
 
-- User Log In
+ User Log In
 ![Log In](https://user-images.githubusercontent.com/87200663/145518618-efc3a9d7-58ea-4e0f-8bc8-4a7a9580287d.png)
 
-- Layout Component for all pages
+ Layout Component for all pages
 ![Layout](https://user-images.githubusercontent.com/87200663/145518632-c0da910b-a686-4741-bb10-cf98f7e5fcc1.png)
 
-- User Home Page
+ User Home Page
 ![Home Page](https://user-images.githubusercontent.com/87200663/145518645-b8a8b075-86fb-4816-9d14-61d04f1211b1.png)
 
-- User Recipes List
+ User Recipes List
 ![All My Recipes](https://user-images.githubusercontent.com/87200663/145518659-c65d306b-d95a-4ce0-8924-17e13f023bd7.png)
 
-- Search Screen
+ Search Screen
 ![Search](https://user-images.githubusercontent.com/87200663/145518670-08ed8bca-e67a-46d1-8cca-34a06726e183.png)
 
-- Single Meal Plan Screen
+ Single Meal Plan Screen
 ![Single Meal Plan](https://user-images.githubusercontent.com/87200663/145518677-e1ce7aac-01b9-4be8-9127-b45156d9c3a2.png)
 
 
-
-- Mobile Resource Index
 
 #### Component Tree
 
