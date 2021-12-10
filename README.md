@@ -90,6 +90,8 @@ _The **Foodies** MVP will be the basic foundation for this app to grow more comp
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
+![Landing Page](https://user-images.githubusercontent.com/87200663/145518481-433d87a9-0673-4198-8a47-675829766050.png)
+
 ![Dummy Link](https://imgur.com/WAG7B7X)
 
 - Desktop Landing
