@@ -176,8 +176,8 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Develop Project Pitch    |    H     |     5 hrs      |     8 hrs     |    TBD    |
-| Project Pitch + Approval |    H     |     15 min      |     0     |     TBD     |
+| Develop Project Pitch    |    H     |     5 hrs      |     8 hrs     |    8 hrs    |
+| Project Pitch + Approval |    H     |     15 min      |     30 min     |     30 min     |
 | Create new Rails App    |    H     |     30 min      |     0     |    TBD    |
 | Create Rails Database |    H     |     15 min      |     0      |     TBD     |
 | Scaffold Resources    |    H     |     30 min      |     0     |    TBD    |
