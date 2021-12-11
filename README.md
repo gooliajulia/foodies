@@ -216,7 +216,7 @@ src
 
 #### ERD Model
 
-![Foodies App ERD - MVP](https://user-images.githubusercontent.com/87200663/145628976-7a312734-4ae5-47ce-8f31-32995263ad3b.png)
+![Foodies App ERD MVP](https://user-images.githubusercontent.com/87200663/145647089-0724e357-b473-4382-aab1-02be85e0b3db.png)
 
 
 https://drive.google.com/file/d/1e7eKmuwdzfcIXd8C9cX0JvsEJt8cozEI/view?usp=sharing
