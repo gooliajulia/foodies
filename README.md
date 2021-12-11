@@ -178,15 +178,14 @@ src
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Develop Project Pitch    |    H     |     5 hrs      |     8 hrs     |    8 hrs    |
 | Project Pitch + Approval |    H     |     15 min      |     30 min     |     30 min     |
-| Create new Rails App    |    H     |     30 min      |     0     |    TBD    |
-| Create Rails Database |    H     |     15 min      |     0      |     TBD     |
-| Scaffold Resources    |    H     |     30 min      |     0     |    TBD    |
-| Create Join Table |    H     |     15 min      |     0      |     TBD     |
-| Check Models, Controllers + Routes    |    H     |     2 hrs      |     0     |    TBD    |
-| Add Dependencies (Bcrypt, JWT, CORS, Faker, Axios, React-router-dom@5.3.0) |    M     |     45 min      |     0      |     TBD     |
-| Write Seed File    |    H     |     1 hr       |     0     |    TBD    |
-| Establish Authentication |    H     |     1 hr      |     0      |     TBD     |
-| Test endpoints with Postman    |    H     |     1 hr      |     0     |    TBD    |
+| Create new Rails App    |    H     |     30 min      |     5 min     |    5 min    |
+| Create Rails Database |    H     |     15 min      |     25 min     |     25 min     |
+| Scaffold Resources    |    H     |     30 min      |     20 min     |    20 min    |
+| Check Models, Controllers + Routes    |    H     |     2 hrs      |     15 min     |    15 min    |
+| Add Dependencies (Bcrypt, JWT, CORS, Faker, Axios, React-router-dom@5.3.0) |    M     |     45 min      |     10 min      |     10 min     |
+| Write Seed File    |    H     |     1 hr       |     30 min     |    30 min    |
+| Establish Authentication |    H     |     1 hr      |     30 min      |     30 min     |
+| Test endpoints with Postman    |    H     |     1 hr      |     15 min     |    15 min    |
 | Create React App |    H     |     30 min      |     0      |     TBD     |
 | Create Front End File Structure    |    H     |     45 min      |     0     |    TBD    |
 | Create Landing Page |    H     |     1 hr      |     0      |     TBD     |
@@ -207,7 +206,7 @@ src
 | Recipe Edit Basic CSS |    H     |     1 hr      |     0      |     TBD     |
 | Create All Users Recipes Screen    |    H     |     2 hrs      |     0     |    TBD    |
 | All Users Recipes Basic CSS |    H     |     1 hr      |     0      |     TBD     |
-| TOTAL               |          |     43 hrs 45 min      |     8 hrs     |     TBD     |
+| TOTAL               |          |     43 hrs 45 min      |     10 hrs 50 min    |     TBD     |
 
 
 <br>
