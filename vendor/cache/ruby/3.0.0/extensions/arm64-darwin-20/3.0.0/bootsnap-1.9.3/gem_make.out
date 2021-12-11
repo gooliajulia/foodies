@@ -1,0 +1,15 @@
+current directory: /Users/julia/general assembly/sei/paw_paw/unit_4/project-4/foodies/vendor/cache/ruby/3.0.0/gems/bootsnap-1.9.3/ext/bootsnap
+/Users/julia/.rbenv/versions/3.0.0/bin/ruby -I /Users/julia/.rbenv/versions/3.0.0/lib/ruby/site_ruby/3.0.0 -r ./siteconf20211211-95376-9u3vu1.rb extconf.rb
+creating Makefile
+
+current directory: /Users/julia/general assembly/sei/paw_paw/unit_4/project-4/foodies/vendor/cache/ruby/3.0.0/gems/bootsnap-1.9.3/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /Users/julia/general assembly/sei/paw_paw/unit_4/project-4/foodies/vendor/cache/ruby/3.0.0/gems/bootsnap-1.9.3/ext/bootsnap
+make DESTDIR\=
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/julia/general assembly/sei/paw_paw/unit_4/project-4/foodies/vendor/cache/ruby/3.0.0/gems/bootsnap-1.9.3/ext/bootsnap
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20211211-95376-aqnfbn/bootsnap
