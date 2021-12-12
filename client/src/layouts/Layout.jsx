@@ -16,6 +16,27 @@ export default function Layout({currentUser, users}) {
                         <Link to='/recipes'>Liked Recipes</Link>
                         <br/>
                         <hr className='solid'/>
+                        <br/>
+                        <div className='overflow'>
+                            <Link to='/home'>Recipe 1</Link>
+                            <Link to='/home'>Recipe 2</Link>
+                            <Link to='/home'>Recipe 3</Link>
+                            <Link to='/home'>Recipe 4</Link>
+                            <Link to='/home'>Recipe 5</Link>
+                            <Link to='/home'>Recipe 6</Link>
+                            <Link to='/home'>Recipe 1</Link>
+                            <Link to='/home'>Recipe 2</Link>
+                            <Link to='/home'>Recipe 3</Link>
+                            <Link to='/home'>Recipe 4</Link>
+                            <Link to='/home'>Recipe 5</Link>
+                            <Link to='/home'>Recipe 6</Link>
+                            <Link to='/home'>Recipe 1</Link>
+                            <Link to='/home'>Recipe 2</Link>
+                            <Link to='/home'>Recipe 3</Link>
+                            <Link to='/home'>Recipe 4</Link>
+                            <Link to='/home'>Recipe 5</Link>
+                            <Link to='/home'>Recipe 6</Link>
+                        </div>
                     </nav>
                 }
             </header>
