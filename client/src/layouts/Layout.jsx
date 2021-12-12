@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './Layout.css';
 
-export default function Layout({currentUser}) {
+export default function Layout({currentUser, users}) {
 
     return (
         <div id='layout'>
@@ -18,6 +18,9 @@ export default function Layout({currentUser}) {
             <p className='greeting'>Good morning, {currentUser?.username}</p>
             <footer>
                 <h3>foodies activity</h3>
+                {users?.map(user => 
+                    <p key={user.id}>{user.username}</p>
+                )}
                 <Link to='/users'>
                     <button>View All Users</button>
                 </Link>

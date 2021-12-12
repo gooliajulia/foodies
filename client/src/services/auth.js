@@ -23,3 +23,8 @@ export const registerUser = async (registerData) => {
     api.defaults.headers.common.authorization = `Bearer ${resp.data.token}`;
     return resp.data.user
 }
+
+export const getUsers = async () => {
+    const resp = await api.get('/users');
+    return resp.data
+}

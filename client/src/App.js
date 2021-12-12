@@ -5,10 +5,11 @@ import LogIn from './screens/LogIn';
 import Register from './screens/Register';
 import { useState, useEffect } from 'react';
 import { useHistory, Switch, Route } from 'react-router-dom';
-import { verifyUser, loginUser, registerUser } from './services/auth'
+import { verifyUser, loginUser, registerUser, getUsers } from './services/auth'
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
+  const [users, setUsers ] = useState([]);
   const history = useHistory();
 
   useEffect(()=> {
@@ -18,6 +19,14 @@ function App() {
     }
     handleVerify();
   },[]);
+
+  useEffect(() => {
+    const fetchAllUsers = async () => {
+      const allUsers = await getUsers();
+      setUsers(allUsers); 
+    };
+    fetchAllUsers();
+  },[])
 
   const handleLogin = async (formData) => {
     const userData = await loginUser(formData);
@@ -31,6 +40,8 @@ function App() {
     history.push('/home');
   }
 
+
+
   return (
     <div className="App">
       <Switch>
@@ -42,7 +53,9 @@ function App() {
           <Register handleRegister={handleRegister}/>
         </Route>
         <Route path='/home'>
-          <Layout currentUser={currentUser} >
+          <Layout 
+            currentUser={currentUser} 
+            users={users}>
           </Layout>
         </Route>
         <Route path='/'>
