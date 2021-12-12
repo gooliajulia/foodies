@@ -5,7 +5,7 @@ import LogIn from './screens/LogIn';
 import Register from './screens/Register';
 import { useState, useEffect } from 'react';
 import { useHistory, Switch, Route } from 'react-router-dom';
-import { verifyUser, loginUser } from './services/auth'
+import { verifyUser, loginUser, registerUser } from './services/auth'
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -25,6 +25,12 @@ function App() {
     history.push('/home');
   }
 
+  const handleRegister = async (formData) => {
+    const userData = await registerUser(formData);
+    setCurrentUser(userData);
+    history.push('/home');
+  }
+
   return (
     <div className="App">
       <Switch>
@@ -33,7 +39,7 @@ function App() {
             handleLogin={handleLogin}/>
         </Route>
         <Route path='/register'>
-          <Register />
+          <Register handleRegister={handleRegister}/>
         </Route>
         <Route path='/home'>
           <Layout currentUser={currentUser} >

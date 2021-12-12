@@ -14,6 +14,7 @@ export default function Layout({currentUser}) {
                     </nav>
                 }
             </header>
+            <p>{currentUser.username}</p>
             <footer>
                 <h3>foodies activity</h3>
                 <Link to='/users'>
