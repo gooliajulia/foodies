@@ -1,36 +1,37 @@
 div #layout {
-    background-image: url('../assets/images/Rectangle.png');
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#layout header{
-    background-color: rgba(255,245,238, 0.3) ;
-    height: 100vh;
-    width: 240px;
-}
-
-#layout footer{
-    background-color: rgba(255,245,238, 0.3) ;
-    height: 100vh;
-    width: 240px;
-}
-
 #layout nav {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+}
+
+#layout hr.solid {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.397);
+    height: 1px;
+    width: 100%;
 }
 
 #layout a {
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.76);
+    margin: 8px;
 }
 
 .greeting {
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 600;
     position: absolute;
     top: 0;
     left: 280px;
+    color: rgba(0, 0, 0, 0.747);
 }
 

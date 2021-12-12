@@ -11,7 +11,11 @@ export default function Layout({currentUser, users}) {
                         <Link to='/home'>Home</Link>
                         <Link to='/search'>Search</Link>
                         <Link to='/recipes'>My Recipe Box</Link>
+                        <br/>
                         <Link to='/foods/new'>Create Recipe</Link>
+                        <Link to='/recipes'>Liked Recipes</Link>
+                        <br/>
+                        <hr className='solid'/>
                     </nav>
                 }
             </header>
