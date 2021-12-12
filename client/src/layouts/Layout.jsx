@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom'
+import './Layout.css';
 
 export default function Layout({currentUser}) {
 
     return (
-        <div>
-            <header>
+        <div id='layout'>
+            <header className='layout'>
                 {currentUser &&
                     <nav>
                         <Link to='/home'>Home</Link>
@@ -14,7 +15,7 @@ export default function Layout({currentUser}) {
                     </nav>
                 }
             </header>
-            <p>{currentUser.username}</p>
+            <p className='greeting'>Good morning, {currentUser?.username}</p>
             <footer>
                 <h3>foodies activity</h3>
                 <Link to='/users'>
