@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+
+#landing {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../assets/images/Rectangle.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#landing h1 {
+    margin: 0;
+    font-family: 'Rozha One', serif;
+    color: white;
+    opacity: .75;
+    font-weight: lighter;
+    font-size: 100px;
+}
+
+#landing a {
+    margin: 15px;
+    font-size: 25px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-family: 'Rozha One', serif;
+}
+
+#landing a:hover {
+    color: rgb(104, 62, 62);
+}
