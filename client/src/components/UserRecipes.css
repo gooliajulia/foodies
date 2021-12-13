@@ -1,0 +1,27 @@
+div.column-titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.recipe-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+p.first  {
+    width: 40%;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+p.center {
+    width: 30%;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
