@@ -73,4 +73,11 @@ div.overflow {
 div.main-container {
   overflow: scroll;
   height: 100vh;
+  width: 55%;
+}
+
+img.thumbnail {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
 }

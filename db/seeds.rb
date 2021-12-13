@@ -14,7 +14,7 @@ User.destroy_all
 puts "#{User.count} user accounts created!"
 
 15.times do
-    Recipe.create!(name: Faker::Food.dish, ingredients: Faker::Food.ingredient , user:@admin)
+    Recipe.create!(name: Faker::Food.dish, ingredients: Faker::Food.ingredient , user:@admin, image_url: 'https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=749&q=80')
 end
 
 puts "#{Recipe.count} recipes created!"
