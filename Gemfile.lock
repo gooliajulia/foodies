@@ -161,7 +161,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rack-cors
   rails (~> 6.1.4, >= 6.1.4.1)
-  spring
+  spring (~> 4.0.0)
   tzinfo-data
 
 RUBY VERSION
