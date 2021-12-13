@@ -35,3 +35,15 @@ div #layout {
     color: rgba(0, 0, 0, 0.747);
 }
 
+#layout p {
+    color: black;
+    margin: 8px;
+}
+
+#layout footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px;
+}
