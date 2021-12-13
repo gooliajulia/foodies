@@ -69,3 +69,8 @@ div.overflow {
   height: 300px;
   width: 100%;
 }
+
+div.main-container {
+  overflow: scroll;
+  height: 100vh;
+}

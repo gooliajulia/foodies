@@ -12,7 +12,7 @@ export default function Layout({currentUser, users, children}) {
                         <Link to='/search'>Search</Link>
                         <Link to='/home/recipes'>My Recipe Box</Link>
                         <br/>
-                        <Link to='home/recipes/new'>Create Recipe</Link>
+                        <Link to='/home/recipes/new'>Create Recipe</Link>
                         <Link to='/recipes'>Liked Recipes</Link>
                         <br/>
                         <hr className='solid'/>

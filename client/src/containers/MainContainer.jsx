@@ -19,12 +19,12 @@ export default function MainContainer({currentUser}) {
     const handleCreateRecipe = async (formData) => {
         const newRecipe = await postRecipe(formData);
         setRecipes((prevState) => [...prevState, newRecipe]);
-        history.push('/home');
+        history.push('/home/recipes');
     }
 
 
     return (
-        <div>
+        <div className='main-container'>
             <h2>Good morning, {currentUser?.username}</h2>
             <Switch>
                 <Route path='/home/recipes/new'>
