@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './Layout.css';
 
-export default function Layout({currentUser, users}) {
+export default function Layout({currentUser, users, children}) {
 
     return (
         <div id='layout'>
@@ -12,7 +12,7 @@ export default function Layout({currentUser, users}) {
                         <Link to='/search'>Search</Link>
                         <Link to='/recipes'>My Recipe Box</Link>
                         <br/>
-                        <Link to='/foods/new'>Create Recipe</Link>
+                        <Link to='home/foods/new'>Create Recipe</Link>
                         <Link to='/recipes'>Liked Recipes</Link>
                         <br/>
                         <hr className='solid'/>
@@ -40,7 +40,7 @@ export default function Layout({currentUser, users}) {
                     </nav>
                 }
             </header>
-            <p className='greeting'>Good morning, {currentUser?.username}</p>
+            {children}
             <footer>
                 <h3>foodies activity</h3>
                 {users?.map(user => 

@@ -57,11 +57,7 @@ function App() {
           <Layout 
             currentUser={currentUser} 
             users={users}>
-              <Switch>
-              <Route path='/home'>
-                <MainContainer />
-              </Route>
-              </Switch>
+                  <MainContainer currentUser={currentUser}/>
           </Layout>
         </Route>
         <Route path='/'>
