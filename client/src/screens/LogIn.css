@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.log-in {
+    background-image: linear-gradient(rgb(236, 222, 183),rgb(165, 102, 102));
+    height: 100vh;
+    width: 100vw;
+}
+
+.log-in h2 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 20px;
+}
+
+.log-in form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(250,250,250, .3);
+    border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+    padding: 25px;
+    row-gap: 10px;
+}
+
+div.log-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in button {
+    width: fit-content;
+    background-color: rgba(255, 235, 205, 0.527);
+    border-radius: 15px;
+    border-style: none;
+    padding: 6px 10px;
+}
+
+.log-in .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 20px;
+    color: rgb(95, 41, 41);
+    margin: 10px;
+    row-gap: 7px;
+}
+
+.log-in label {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+}
+
+.log-in h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.inputs input {
+    border-style: none;
+    border-radius: 3px;
+}
+
+.log-in p {
+    font-size: 16px;
+    margin: 5px;
+}

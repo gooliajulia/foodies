@@ -6,6 +6,7 @@ import Register from './screens/Register';
 import { useState, useEffect } from 'react';
 import { useHistory, Switch, Route } from 'react-router-dom';
 import { verifyUser, loginUser, registerUser, getUsers } from './services/auth'
+import MainContainer from './containers/MainContainer';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -56,6 +57,11 @@ function App() {
           <Layout 
             currentUser={currentUser} 
             users={users}>
+              <Switch>
+              <Route path='/home'>
+                <MainContainer />
+              </Route>
+              </Switch>
           </Layout>
         </Route>
         <Route path='/'>
