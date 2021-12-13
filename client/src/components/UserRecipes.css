@@ -10,8 +10,12 @@ div.recipe-link {
     justify-content: space-between;
 }
 
+.recipe-link p {
+    margin: 0;
+}
+
 p.first  {
-    width: 40%;
+    width: 30%;
     text-align: left;
     overflow: hidden;
     white-space: nowrap;
@@ -19,7 +23,7 @@ p.first  {
 }
 
 p.center {
-    width: 30%;
+    width: 40%;
     text-align: left;
     overflow: hidden;
     white-space: nowrap;

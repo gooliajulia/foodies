@@ -14,7 +14,7 @@ export default function UserRecipes({recipes}) {
             </div>
             {recipes?.map((recipe) => (
                 <div key={recipe.id}>
-                    <Link to={`/home/recipes/${recipe.id}`}>
+                    <Link className='column-content' to={`/home/recipes/${recipe.id}`}>
                         <div className='recipe-link'>
                             <p className='first'>{recipe.name}</p>
                             <p className='center'>{recipe.ingredients}</p>
