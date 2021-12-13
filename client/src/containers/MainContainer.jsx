@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import CreateRecipe from '../components/CreateRecipe';
 import { postRecipe, getRecipes } from '../services/recipe'
 import UserRecipes from '../components/UserRecipes';
+import RecipeDetail from '../components/RecipeDetail';
 
 export default function MainContainer({currentUser}) {
     const [recipes, setRecipes] = useState([]);
@@ -30,9 +31,13 @@ export default function MainContainer({currentUser}) {
                 <Route path='/home/recipes/new'>
                     <CreateRecipe handleCreateRecipe={handleCreateRecipe}/>
                 </Route>
+                <Route path='/home/recipes/:id'>
+                    <RecipeDetail recipes={recipes}/>
+                </Route>
                 <Route path='/home/recipes'>
                     <UserRecipes recipes={recipes}/>
                 </Route>
+
             </Switch>
         </div>
     )
