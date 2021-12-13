@@ -10,9 +10,9 @@ export default function Layout({currentUser, users, children}) {
                     <nav>
                         <Link to='/home'>Home</Link>
                         <Link to='/search'>Search</Link>
-                        <Link to='/recipes'>My Recipe Box</Link>
+                        <Link to='/home/recipes'>My Recipe Box</Link>
                         <br/>
-                        <Link to='home/foods/new'>Create Recipe</Link>
+                        <Link to='home/recipes/new'>Create Recipe</Link>
                         <Link to='/recipes'>Liked Recipes</Link>
                         <br/>
                         <hr className='solid'/>
