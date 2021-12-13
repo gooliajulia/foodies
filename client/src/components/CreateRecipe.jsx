@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './CreateRecipe.css';
 
 
 export default function CreateRecipe({handleCreateRecipe}) {
@@ -17,7 +18,7 @@ export default function CreateRecipe({handleCreateRecipe}) {
     };
 
     return (
-        <form onSubmit={(e)=> {
+        <form className='create' onSubmit={(e)=> {
             e.preventDefault();
             handleCreateRecipe(formData);
         }}>

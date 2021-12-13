@@ -1,0 +1,34 @@
+.create {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.create h3 {
+    font-size: 30px;
+    color: black;
+}
+
+.create label {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+}
+
+.create input {
+    border-radius: 6px;
+    border-color: rgb(230, 215, 199);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.create button {
+    align-self: center;
+    margin-top: 15px;
+    border-radius: 10px;
+    border-style: none;
+    padding: 7px 15px;
+    background-color: rgb(255, 245, 235);
+}
+
