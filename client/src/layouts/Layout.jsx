@@ -56,15 +56,19 @@ export default function Layout({currentUser, users, children}) {
                 {users?.filter((user) => {
                     return user.recipes.length > 0
                 }).map(user => 
-                        <>
-                            <img className='user' src={user.image_url} alt={user.username} />
-                            <p key={user.id}>{user.username}</p>
-                            <p>{user.recipes[0].name}</p>
-                            <img className='thumbnail' src={user.recipes[0].image_url} alt={user.recipes[0].name} />
-                        </>
+                        <div className='foodie-activity'>
+                            <div className='foodie'>
+                                <img className='user' src={user?.image_url} alt={user.username} />
+                                <p key={user.id}>{user.username}</p>
+                            </div>
+                            <div className='foodie-recipe'>
+                                <p className='foodie-recipe-name' >{user.recipes[0].name}</p>
+                                <img className='thumbnail' src={user.recipes[0].image_url} alt={user.recipes[0].name} />
+                            </div>
+                        </div>
                     )}
                 <Link to='/users'>
-                    <button>View All Users</button>
+                    <button className='view-users'>View All Users</button>
                 </Link>
             </footer>
         </div>
