@@ -53,13 +53,15 @@ export default function Layout({currentUser, users, children}) {
             {children}
             <footer>
                 <h3>foodies activity</h3>
-                {users?.map(user => 
-                <>
-                    <p key={user.id}>{user.username}</p>
-                    <p>{user.recipes[0].name}</p>
-                    <img className='thumbnail' src={user.recipes[0].image_url} alt={user.recipes[0].name} />
-                </>
-                )}
+                {users?.filter((user) => {
+                    return user.recipes.length > 0
+                }).map(user => 
+                        <>
+                            <p key={user.id}>{user.username}</p>
+                            <p>{user.recipes[0].name}</p>
+                            <img className='thumbnail' src={user.recipes[0].image_url} alt={user.recipes[0].name} />
+                        </>
+                    )}
                 <Link to='/users'>
                     <button>View All Users</button>
                 </Link>
