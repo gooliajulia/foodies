@@ -92,3 +92,17 @@ div#top-header {
     position: sticky;
     top: 0;
 }
+
+
+@media screen and (max-width:1150px) {
+
+    #layout footer {
+        display:none;
+    }
+
+    div #layout {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
