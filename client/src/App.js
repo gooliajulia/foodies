@@ -5,7 +5,7 @@ import LogIn from './screens/LogIn';
 import Register from './screens/Register';
 import { useState, useEffect } from 'react';
 import { useHistory, Switch, Route } from 'react-router-dom';
-import { verifyUser, loginUser, registerUser, getUsers } from './services/auth'
+import { verifyUser, loginUser, registerUser, getUsers, removeToken } from './services/auth'
 import MainContainer from './containers/MainContainer';
 
 function App() {
@@ -41,6 +41,13 @@ function App() {
     history.push('/home');
   }
 
+  const handleLogout = () => {
+    setCurrentUser(null);
+    localStorage.removeItem('authToken');
+    removeToken();
+    history.push('/');
+  }
+
 
 
   return (
@@ -57,7 +64,7 @@ function App() {
           <Layout 
             currentUser={currentUser} 
             users={users}>
-                  <MainContainer currentUser={currentUser}/>
+                  <MainContainer currentUser={currentUser} handleLogout={handleLogout}/>
           </Layout>
         </Route>
         <Route path='/'>

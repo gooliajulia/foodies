@@ -28,3 +28,7 @@ export const getUsers = async () => {
     const resp = await api.get('/users');
     return resp.data
 }
+
+export const removeToken = () => {
+    api.defaults.headers.common.authorization = null;
+}
