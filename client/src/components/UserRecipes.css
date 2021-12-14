@@ -8,10 +8,12 @@ div.recipe-link {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 5px;
 }
 
 .recipe-link p {
     margin: 0;
+    font-size: 14px;
 }
 
 p.first  {
@@ -23,9 +25,11 @@ p.first  {
 }
 
 p.center {
-    width: 40%;
+    width: 30%;
     text-align: left;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
+

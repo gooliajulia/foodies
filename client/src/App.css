@@ -76,6 +76,8 @@ div.main-container {
   overflow: scroll;
   height: 100vh;
   width: 63%;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 img {

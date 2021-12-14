@@ -19,7 +19,7 @@ export default function UserRecipes({recipes}) {
                             <img className='thumbnail' alt={recipe.name} src={recipe.image_url} />
                             <p className='first'>{recipe.name}</p>
                             <p className='center'>{recipe.ingredients}</p>
-                            <p>prep time</p>
+                            <p className='last' >30 min</p>
                         </div>
                     </Link>
                 </div>
