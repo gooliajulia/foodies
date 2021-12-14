@@ -1,5 +1,6 @@
 div.column-titles {
     display: flex;
+    text-align: left;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -7,7 +8,6 @@ div.column-titles {
 div.recipe-link {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     padding: 5px;
 }
 
@@ -17,7 +17,7 @@ div.recipe-link {
 }
 
 p.first  {
-    width: 30%;
+    width: 23%;
     text-align: left;
     overflow: hidden;
     white-space: nowrap;
@@ -25,11 +25,23 @@ p.first  {
 }
 
 p.center {
-    width: 30%;
+    width: 55%;
     text-align: left;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+
+h4.first {
+    width: 35%;
+}
+
+h4.second {
+    width: 55%;
+}
+
+h4.third {
+    width: 13%;
 }
 
 .recipes-list h2 {

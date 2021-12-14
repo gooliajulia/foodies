@@ -4,7 +4,6 @@
 .App {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  color: white;
 }
 
 header {
@@ -71,9 +70,17 @@ img {
   border-radius: 8px;
 }
 
-img.thumbnail {
+img.feed-thumbnail {
   width: 140px;
-  height: 100px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+img.thumbnail {
+  width: 60px;
+  height: 60px;
   overflow: hidden;
   border-radius: 3px;
   object-fit: cover;

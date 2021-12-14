@@ -8,9 +8,9 @@ export default function UserRecipes({recipes}) {
         <div className='recipes-list'>
             <h2>My Recipes</h2>
             <div className='column-titles'>
-                <h4>Name</h4>
-                <h4>Ingredients</h4>
-                <h4>Prep Time</h4>
+                <h4 className='first'>Name</h4>
+                <h4 className='second'>Ingredients</h4>
+                <h4 className='third'>Prep Time</h4>
             </div>
             {recipes?.map((recipe) => (
                 <div key={recipe.id}>

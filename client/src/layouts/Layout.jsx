@@ -63,7 +63,7 @@ export default function Layout({currentUser, users, children}) {
                             </div>
                             <div className='foodie-recipe'>
                                 <p className='foodie-recipe-name' >{user.recipes[0].name}</p>
-                                <img className='thumbnail' src={user.recipes[0].image_url} alt={user.recipes[0].name} />
+                                <img className='feed-thumbnail' src={user.recipes[0].image_url} alt={user.recipes[0].name} />
                             </div>
                         </div>
                     )}
