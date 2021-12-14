@@ -32,11 +32,11 @@
 }
 
 .recipe-form button {
-    margin-top: 15px;
-    border-radius: 10px;
+    background-color: rgba(0,0, 0,.8);
+    color: white;
+    border-radius: 25px;
     border-style: none;
-    padding: 7px 15px;
-    background-color: rgb(255, 245, 235);
+    padding: 10px 20px;
 }
 
 .recipe-form-image-container {
