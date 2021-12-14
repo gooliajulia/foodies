@@ -12,7 +12,7 @@ export default function Layout({currentUser, users, children}) {
                         <Link className='nav' to='/home'>
                             <img className='icon' src="https://img.icons8.com/fluency-systems-regular/48/000000/home.png" alt='house'/><p>Home</p>
                         </Link>
-                        <Link className='nav' to='/search'>
+                        <Link className='nav' to='/home/search'>
                         <img className='icon' src="https://img.icons8.com/ios/48/000000/search.png" alt='magnifying glass'/><p>Search</p>
                         </Link>
                         <Link className='nav' to='/home/recipes'>
@@ -20,7 +20,7 @@ export default function Layout({currentUser, users, children}) {
                         <br/>
                         <Link to='/home/recipes/new' className='nav'>
                             <img className='icon' src="https://img.icons8.com/ios/50/000000/plus--v1.png" alt='plus sign' /><p>Create Recipe</p></Link>
-                        <Link to='/recipes' className='nav'>
+                        <Link to='/home/recipes' className='nav'>
                         <img className='icon' src="https://img.icons8.com/material-outlined/24/000000/like--v1.png" alt='heart' /><p>Liked Recipes</p></Link>
                         <br/>
                         <hr className='solid'/>
