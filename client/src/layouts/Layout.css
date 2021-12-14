@@ -50,11 +50,12 @@ div #layout {
     box-sizing: border-box;
 }
 
+
 img.icon {
-    width: 25px;
-    height: 25px;
-    align-self: center;
-    margin-bottom: 2px;
+  width: 25px;
+  height: 25px;
+  align-self: center;
+  margin-bottom: 2px;
 }
 
 a.nav {

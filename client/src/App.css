@@ -68,9 +68,8 @@ div.overflow {
   flex-direction: column;
   align-items: flex-start;
   overflow:scroll;
-  /* min-height: calc(~"100vh - 100") */
-  /* height: 45vh; */
   width: 100%;
+  row-gap: 15px;
 }
 
 div.main-container {
@@ -83,6 +82,7 @@ img {
   width: 250px;
   border-radius: 8px;
 }
+
 
 img.thumbnail {
   width: 60px;
