@@ -6,8 +6,9 @@ export default function CreateRecipe({handleCreateRecipe}) {
     const [formData, setFormData] = useState({
         name: '',
         ingredients: '',
+        image_url: '',
     });
-    const { name, ingredients } = formData;
+    const { name, ingredients, image_url } = formData;
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -31,7 +32,12 @@ export default function CreateRecipe({handleCreateRecipe}) {
                 Ingredients:
                 <input type='text' name='ingredients' value={ingredients} onChange={handleChange}/>
             </label>
+            <label>
+                Image:
+                <input type='text' name='image_url' value={image_url} onChange={handleChange}/>
+            </label>
             <button>Add {name} to my recipes</button>
+            <img src={image_url} alt={name} />
         </form>
     )
 }
