@@ -72,17 +72,22 @@ div.user {
     padding: 3px;
     display: flex;
     align-self: center;
-
 }
 
 img.user {
     width: 30px;
     height: 30px;
     border-radius: 50px;
+    margin: 2px;
+}
+
+button.log-out {
+    margin: 1px;
 }
 
 p#user {
     color: white;
+    margin-right: 25px;
 }
 
 div#top-header {
