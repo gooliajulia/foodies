@@ -43,7 +43,11 @@ export default function MainContainer({currentUser}) {
 
     return (
         <div className='main-container'>
-            <h2>Good morning, {currentUser?.username}</h2>
+            <h2 className='greeting'>Good morning, {currentUser?.username}</h2>
+            <div className='user'>
+                <img className='user' src='https://media-exp1.licdn.com/dms/image/D4D03AQGCF9ln-ItOJg/profile-displayphoto-shrink_200_200/0/1637721714007?e=1645056000&v=beta&t=ihwoULXwg6SAAbyWpNa9-Ohjjl6HtWqo9_2fpfb1Rjs' alt={currentUser?.username} />
+                <p id='user'>{currentUser?.username}</p>
+                </div>
             <Switch>
                 <Route path='/home/recipes/:id/edit'>
                     <RecipeEdit recipes={recipes} handleRecipeUpdate={handleRecipeUpdate}/>
