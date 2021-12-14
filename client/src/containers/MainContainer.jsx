@@ -7,6 +7,7 @@ import RecipeDetail from '../components/RecipeDetail';
 import RecipeEdit from '../components/RecipeEdit';
 import './MainContainer.css'
 import CreateMealPlan from '../components/CreateMealPlan';
+import Search from '../components/Search';
 
 export default function MainContainer({currentUser, handleLogout}) {
     const [recipes, setRecipes] = useState([]);
@@ -63,6 +64,9 @@ export default function MainContainer({currentUser, handleLogout}) {
                 </Route>
                 <Route path='/home/meal-plans/new'>
                     <CreateMealPlan />
+                </Route>
+                <Route path='/home/search'>
+                    <Search recipes={recipes}/>
                 </Route>
                 <Route path='/home/recipes/:id'>
                     <RecipeDetail recipes={recipes} handleRecipeDelete={handleRecipeDelete}/>
