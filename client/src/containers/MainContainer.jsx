@@ -70,7 +70,7 @@ export default function MainContainer({currentUser, handleLogout}) {
                     <Search recipes={recipes}/>
                 </Route>
                 <Route path='/home/recipes/:id'>
-                    <RecipeDetail recipes={recipes} handleRecipeDelete={handleRecipeDelete}/>
+                    <RecipeDetail recipes={recipes} handleRecipeDelete={handleRecipeDelete} currentUser={currentUser}/>
                 </Route>
                 <Route path='/home/recipes'>
                     <UserRecipes recipes={recipes}/>
