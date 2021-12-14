@@ -23,7 +23,7 @@ div #layout {
     font-size: 16px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.76);
-    margin: 8px;
+
 }
 
 .greeting {
@@ -48,4 +48,17 @@ div #layout {
     padding: 30px;
     height: 100vh;
     box-sizing: border-box;
+}
+
+img.icon {
+    width: 25px;
+    height: 25px;
+    align-self: center;
+    margin-bottom: 2px;
+}
+
+a.nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
 }

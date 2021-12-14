@@ -8,9 +8,15 @@ export default function Layout({currentUser, users, children}) {
             <header className='layout'>
                 {currentUser &&
                     <nav>
-                        <Link to='/home'>Home</Link>
-                        <Link to='/search'>Search</Link>
-                        <Link to='/home/recipes'>My Recipe Box</Link>
+
+                        <Link className='nav' to='/home'>
+                            <img className='icon' src="https://img.icons8.com/fluency-systems-regular/48/000000/home.png"/><p>Home</p>
+                        </Link>
+                        <Link className='nav' to='/search'>
+                        <img className='icon' src="https://img.icons8.com/ios/48/000000/search.png"/><p>Search</p>
+                        </Link>
+                        <Link className='nav' to='/home/recipes'>
+                        <img className='icon' src="https://img.icons8.com/windows/32/000000/grip-lines-vertical.png"/><p>Recipe Box</p></Link>
                         <br/>
                         <Link to='/home/recipes/new'>Create Recipe</Link>
                         <Link to='/recipes'>Liked Recipes</Link>
