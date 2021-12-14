@@ -97,7 +97,7 @@ div#top-header {
     position: sticky;
     top: 0;
     background-image: linear-gradient(rgba(255, 244, 231, 0.85) 65%, rgba(255,255,255,0));
-    padding: 0 20px 20px 20px;
+    padding: 0 10px 20px 20px;
 }
 
 header.layout {
