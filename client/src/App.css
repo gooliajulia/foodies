@@ -79,3 +79,34 @@ img.thumbnail {
   border-radius: 3px;
 }
 
+
+/* ========= Responsive Layout ============= */
+
+@media  screen and (max-width: 1150px) {
+
+  footer h3 {
+    color: black;
+  }
+}
+
+@media  screen and (max-width: 900px) {
+
+  footer h3 {
+    color: blue;
+  }
+}
+
+@media  screen and (max-width: 450px) {
+
+  footer h3 {
+    color: red;
+  }
+}
+
+/* iPhone 5/SE */
+@media  screen and (max-width: 325px) {
+
+  footer h3 {
+    color: purple;
+  }
+}
