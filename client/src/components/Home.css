@@ -3,8 +3,8 @@ div.discover-recipes {
     flex-direction: row;
     column-gap: 15px;
     overflow: scroll;
+    padding: 20px;
 }
-
 
 div.recipe-card {
     width: fit-content;
@@ -18,4 +18,12 @@ div.recipe-card {
 .recipe-card img {
     height: 150px;
     object-fit: cover;
+}
+
+h4.home-highlight {
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    padding-left: 22px;
+    margin: 0;
 }

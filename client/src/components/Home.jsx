@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Home({recipes, currentUser}) {
     return (
         <>
-        <h4>Discover new recipes</h4>
+        <h4 className='home-highlight'>Discover new recipes</h4>
             <div className='discover-recipes'>
                 {recipes?.filter(recipe => 
                     recipe.user_id !== currentUser?.id).map(recipe =>
@@ -17,7 +17,7 @@ export default function Home({recipes, currentUser}) {
                         </Link>
                     )}
             </div>
-        <h4>Ingredient Spotlight: eggs</h4>
+        <h4 className='home-highlight'>Ingredient Spotlight: eggs</h4>
         <div className='discover-recipes'>
             {recipes?.filter(recipe => 
             recipe.ingredients.toLowerCase().includes('oil')).map(recipe =>
