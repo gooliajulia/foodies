@@ -76,6 +76,11 @@ div.main-container {
   width: 55%;
 }
 
+img {
+  width: 250px;
+  border-radius: 8px;
+}
+
 img.thumbnail {
   width: 60px;
   height: 60px;

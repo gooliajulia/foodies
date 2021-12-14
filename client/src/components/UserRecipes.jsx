@@ -16,7 +16,7 @@ export default function UserRecipes({recipes}) {
                 <div key={recipe.id}>
                     <Link className='column-content' to={`/home/recipes/${recipe.id}`}>
                         <div className='recipe-link'>
-                            <img className='thumbnail' src={recipe.image_url} />
+                            <img className='thumbnail' alt={recipe.name} src={recipe.image_url} />
                             <p className='first'>{recipe.name}</p>
                             <p className='center'>{recipe.ingredients}</p>
                             <p>prep time</p>
