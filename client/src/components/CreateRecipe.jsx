@@ -3,6 +3,7 @@ import './CreateRecipe.css';
 
 
 export default function CreateRecipe({handleCreateRecipe}) {
+    const tempImageUrl = 'https://images.unsplash.com/photo-1571987530791-58e3e7744d99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
     const [formData, setFormData] = useState({
         name: '',
         ingredients: '',
@@ -39,7 +40,7 @@ export default function CreateRecipe({handleCreateRecipe}) {
                         <input type='text' name='image_url' value={image_url} onChange={handleChange}/>
                     </label>
                 </div>
-                <img src={image_url} alt={name} />
+                <img src={image_url? image_url : tempImageUrl } alt={name} />
             </div>
             <button>Add {name} to my recipes</button>
         </form>
