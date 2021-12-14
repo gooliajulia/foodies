@@ -61,15 +61,7 @@ a.nav {
 }
 
 h2.greeting {
-    /* color: black;
-    position: sticky;
-    top: 0;
-    left: 0;
-    text-align: left;
-    background-color: rgba(245, 241, 226, .5);
-    margin: 0;
-    height: 60px;
-    width: max-content; */
+    color: black;
 }
 
 div.user {
@@ -80,6 +72,7 @@ div.user {
     padding: 3px;
     display: flex;
     align-self: center;
+
 }
 
 img.user {
@@ -96,4 +89,6 @@ div#top-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
 }

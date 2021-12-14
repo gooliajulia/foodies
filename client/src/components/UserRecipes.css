@@ -32,4 +32,9 @@ p.center {
     text-overflow: ellipsis;
 }
 
+.recipes-list h2 {
+    color: black;
+    text-align: left;
+}
+
 

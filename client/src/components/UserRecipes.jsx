@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function UserRecipes({recipes}) {
 
     return (
-        <div>
+        <div className='recipes-list'>
             <h2>My Recipes</h2>
             <div className='column-titles'>
                 <h4>Name</h4>
