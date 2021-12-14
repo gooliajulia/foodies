@@ -1,0 +1,21 @@
+div.discover-recipes {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    overflow: scroll;
+}
+
+
+div.recipe-card {
+    width: fit-content;
+    height: 300px;
+    background-color: rgba(255,255,255,.3);
+    border-radius: 7px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.recipe-card img {
+    height: 150px;
+    object-fit: cover;
+}
