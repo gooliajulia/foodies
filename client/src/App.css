@@ -84,10 +84,6 @@ img.thumbnail {
 
 @media  screen and (max-width: 1150px) {
 
-  footer h3 {
-    color: black;
-  }
-
   div.main-container {
     width: 100%;
   }
@@ -96,9 +92,44 @@ img.thumbnail {
 
 @media  screen and (max-width: 900px) {
 
-  footer h3 {
-    color: blue;
-  }
+div.overflow {
+  display: none;
+}
+
+#layout header {
+  display: flex;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  flex-direction: row;
+  height: fit-content;
+  width: 100vw;
+}
+
+#layout nav.nav-bar {
+  flex-direction: row;
+  height: fit-content;
+  width: 100vw;
+  margin: 0;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255, 240, 236, 0.8);
+  padding: 10px 8px;
+  justify-content: space-between;
+}
+
+a.nav {
+  width: max-content;
+}
+
+.nav p {
+  width: fit-content;
+}
+
+hr.solid {
+  display: none;
+}
 
 
 }

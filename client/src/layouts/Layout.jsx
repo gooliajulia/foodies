@@ -7,7 +7,7 @@ export default function Layout({currentUser, users, children}) {
         <div id='layout'>
             <header className='layout'>
                 {currentUser &&
-                    <nav>
+                    <nav className='nav-bar'>
 
                         <Link className='nav' to='/home'>
                             <img className='icon' src="https://img.icons8.com/fluency-systems-regular/48/000000/home.png" alt='house'/><p>Home</p>
