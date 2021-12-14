@@ -19,25 +19,29 @@ export default function CreateRecipe({handleCreateRecipe}) {
     };
 
     return (
-        <form className='create' onSubmit={(e)=> {
+        <form className='recipe-form' onSubmit={(e)=> {
             e.preventDefault();
             handleCreateRecipe(formData);
         }}>
             <h3>Create New Recipe</h3>
-            <label>
-                Recipe Name:
-                <input type='text' name='name' value={name} onChange={handleChange} />
-            </label>
-            <label>
-                Ingredients:
-                <input type='text' name='ingredients' value={ingredients} onChange={handleChange}/>
-            </label>
-            <label>
-                Image:
-                <input type='text' name='image_url' value={image_url} onChange={handleChange}/>
-            </label>
+            <div className='recipe-form-image-container'>
+                <div className='recipe-form-container'>
+                    <label>
+                        Recipe Name:
+                        <input type='text' name='name' value={name} onChange={handleChange} />
+                    </label>
+                    <label>
+                        Ingredients:
+                        <input type='text' name='ingredients' value={ingredients} onChange={handleChange}/>
+                    </label>
+                    <label>
+                        Image:
+                        <input type='text' name='image_url' value={image_url} onChange={handleChange}/>
+                    </label>
+                </div>
+                <img src={image_url} alt={name} />
+            </div>
             <button>Add {name} to my recipes</button>
-            <img src={image_url} alt={name} />
         </form>
     )
 }

@@ -1,4 +1,4 @@
-.create {
+.recipe-form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -10,19 +10,19 @@
     width: fit-content;
 }
 
-.create h3 {
+.recipe-form h3 {
     font-size: 30px;
     color: black;
     margin: 10px 0;
 }
 
-.create label {
+.recipe-form label {
     display: flex;
     justify-content: space-between;
     width: 280px;
 }
 
-.create input {
+.recipe-form input {
     border-radius: 8px;
     border-color: rgb(230, 215, 199);
     border-style: solid;
@@ -30,11 +30,30 @@
     height: 20px;
 }
 
-.create button {
+.recipe-form button {
     margin-top: 15px;
     border-radius: 10px;
     border-style: none;
     padding: 7px 15px;
     background-color: rgb(255, 245, 235);
+}
+
+.recipe-form-image-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.recipe-form-image-container img {
+    height: 180px;
+    width: 150px;
+    overflow: hidden;
+}
+
+.recipe-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 15px;
 }
 

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import './CreateRecipe.css';
 
 export default function RecipeEdit({recipes, handleRecipeUpdate}) {
     const [formData, setFormData] = useState({
@@ -31,23 +32,29 @@ export default function RecipeEdit({recipes, handleRecipeUpdate}) {
     };
 
     return (
-        <form onSubmit={(e) => {
+        <form className='recipe-form' onSubmit={(e) => {
             e.preventDefault();
             handleRecipeUpdate(id, formData);
         }}>
             <h3>Edit Recipe</h3>
-            <label>
-                Name: 
-                <input type='text' name='name' value={name} onChange={handleChange} />
-            </label>
-            <label>
-                <input type='text' name='ingredients' value={ingredients} onChange={handleChange} />
-            </label>
-            <label>
-                <input type='text' name='image_url' value={image_url} onChange={handleChange} />
-            </label>
+            <div className='recipe-form-image-container'>
+                <div className='recipe-form-container'>
+                    <label>
+                        Name: 
+                        <input type='text' name='name' value={name} onChange={handleChange} />
+                    </label>
+                    <label>
+                        Ingredients:
+                        <input type='text' name='ingredients' value={ingredients} onChange={handleChange} />
+                    </label>
+                    <label>
+                        Image URL:
+                        <input type='text' name='image_url' value={image_url} onChange={handleChange} />
+                    </label>
+                </div>
+                <img src={image_url} alt={name} />
+            </div>
             <button>Update Recipe</button>
-            <img src={image_url} alt={name} />
         </form>
     )
 }
