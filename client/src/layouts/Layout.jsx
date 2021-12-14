@@ -21,7 +21,7 @@ export default function Layout({currentUser, users, children}) {
                         <Link to='/home/recipes/new' className='nav'>
                             <img className='icon' src="https://img.icons8.com/ios/50/000000/plus--v1.png" alt='plus sign' /><p>Create Recipe</p></Link>
                         <Link to='/home/recipes' className='nav'>
-                        <img className='icon' src="https://img.icons8.com/material-outlined/24/000000/like--v1.png" alt='heart' /><p>Liked Recipes</p></Link>
+                        <img className='icon' src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt='heart' /><p>Liked Recipes</p></Link>
                         <Link to='/home/meal-plans/new' className='nav'>
                             <img className='icon' src="https://img.icons8.com/ios/50/000000/plus--v1.png" alt='plus sign' /><p>Create Meal Plan</p></Link>
                         <br/>
