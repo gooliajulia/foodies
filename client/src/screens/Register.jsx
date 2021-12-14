@@ -5,8 +5,9 @@ export default function Register({handleRegister}) {
     const [formData, setFormData] = useState({
         username: '',
         password: '',
+        image_url: 'https://buildyourspechere.com/wp-content/uploads/2020/10/placeholder-image-person-jpg.jpg',
     })
-    const { username, password } = formData;
+    const { username, password, image_url} = formData;
 
     const handleChange = (e) => {
         const {name, value} = e.target;

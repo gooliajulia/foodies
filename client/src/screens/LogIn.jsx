@@ -5,10 +5,10 @@ import './LogIn.css';
 export default function LogIn({handleLogin}) {
     const [formData, setFormData] = useState({
         username: '',
-        password: '',
+        password: ''
     })
 
-    const { username, password } = formData;
+    const { username, password} = formData;
 
     const handleChange = (e) => {
         const { name, value } = e.target;

@@ -11,20 +11,20 @@ export default function Home({recipes, currentUser}) {
                         <Link to={`/home/recipes/${recipe.id}`} >
                             <div className='recipe-card'>
                                 <h3>{recipe.name}</h3>
-                                <h4>chef: {recipe.user.username}</h4>
+                                <h4>chef: {recipe?.user.username}</h4>
                                 <img src={recipe.image_url} alt={recipe.name} />
                             </div>
                         </Link>
                     )}
             </div>
-        <h4 className='home-highlight'>Ingredient Spotlight: eggs</h4>
+        <h4 className='home-highlight'>Ingredient Spotlight: Oil</h4>
         <div className='discover-recipes'>
             {recipes?.filter(recipe => 
             recipe.ingredients.toLowerCase().includes('oil')).map(recipe =>
                 <Link to={`/home/recipes/${recipe.id}`}>
                     <div className='recipe-card'>
                         <h3>{recipe.name}</h3>
-                        <h4>chef: {recipe.user.username}</h4>
+                        <h4>chef: {recipe?.user.username}</h4>
                         <img src={recipe.image_url} alt={recipe.name} />
                     </div>
                 </Link>)}

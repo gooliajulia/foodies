@@ -57,6 +57,7 @@ export default function Layout({currentUser, users, children}) {
                     return user.recipes.length > 0
                 }).map(user => 
                         <>
+                            <img className='user' src={user.image_url} alt={user.username} />
                             <p key={user.id}>{user.username}</p>
                             <p>{user.recipes[0].name}</p>
                             <img className='thumbnail' src={user.recipes[0].image_url} alt={user.recipes[0].name} />

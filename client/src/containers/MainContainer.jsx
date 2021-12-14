@@ -50,7 +50,7 @@ export default function MainContainer({currentUser, handleLogout}) {
             <div id='top-header'>
                 <h2 className='greeting'>Good morning, {currentUser?.username}</h2>
                 <div className='user'>
-                    <img className='user' src='https://media-exp1.licdn.com/dms/image/D4D03AQGCF9ln-ItOJg/profile-displayphoto-shrink_200_200/0/1637721714007?e=1645056000&v=beta&t=ihwoULXwg6SAAbyWpNa9-Ohjjl6HtWqo9_2fpfb1Rjs' alt={currentUser?.username} />
+                    <img className='user' src={currentUser?.image_url} alt={currentUser?.username} />
                     <p id='user'>{currentUser?.username}</p>
                     <button className='log-out' onClick={handleLogout}>log out</button>
                 </div>
