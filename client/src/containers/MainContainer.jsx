@@ -2,6 +2,7 @@ import { Switch, Route, useHistory } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import CreateRecipe from '../components/CreateRecipe';
 import { postRecipe, getRecipes, deleteRecipe, putRecipe } from '../services/recipe'
+import { getIngredients } from '../services/ingredient';
 import UsersRecipes from '../components/UsersRecipes';
 import RecipeDetail from '../components/RecipeDetail';
 import RecipeEdit from '../components/RecipeEdit';
@@ -14,6 +15,7 @@ import UserRecipes from '../components/UserRecipes';
 
 export default function MainContainer({currentUser, handleLogout, users}) {
     const [recipes, setRecipes] = useState([]);
+    const [ingredients, setIngredients] = useState([]);
     const history = useHistory();
 
     useEffect(() => {
@@ -23,6 +25,14 @@ export default function MainContainer({currentUser, handleLogout, users}) {
         };
         fetchRecipes();
     }, []);
+
+    useEffect(() => {
+        const fetchIngredients = async () => {
+            const ingredientList = await getIngredients();
+            setIngredients(ingredientList);
+        };
+        fetchIngredients();
+    },[])
 
     const handleCreateRecipe = async (formData) => {
         const newRecipe = await postRecipe(formData);
@@ -84,7 +94,7 @@ export default function MainContainer({currentUser, handleLogout, users}) {
                     <Users users={users}/>
                 </Route>
                 <Route path='/home'>
-                    <Home recipes={recipes} currentUser={currentUser}/>
+                    <Home recipes={recipes} currentUser={currentUser} ingredients={ingredients} users={users}/>
                 </Route>
             </Switch>
         </div>

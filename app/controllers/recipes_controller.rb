@@ -6,12 +6,12 @@ class RecipesController < ApplicationController
   def index
     @recipes = Recipe.all
 
-    render json: @recipes, include: :user
+    render json: @recipes, include: [:user, :ingredients]
   end
 
   # GET /recipes/1
   def show
-    render json: @recipe
+    render json: @recipe, include: :ingredients
   end
 
   # POST /recipes
@@ -38,6 +38,16 @@ class RecipesController < ApplicationController
   # DELETE /recipes/1
   def destroy
     @recipe.destroy
+  end
+
+# POST /recipes/ingredients
+  def add_ingredient
+    @recipe = Recipe.find(recipe_params[:recipe_id])
+    @ingredient = Ingredient.find(recipe_params[:ingredient_id])
+
+    @recipe.ingredients << @ingredient 
+
+    render json: @recipe.ingredients 
   end
 
   private
