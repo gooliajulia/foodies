@@ -31,4 +31,8 @@ button.detail {
     margin-right: 20px;
 }
 
+img.detail-image {
+    object-fit: cover;
+}
+
 

@@ -17,7 +17,7 @@ export default function RecipeDetail({ handleRecipeDelete, currentUser }) {
 
     return (
         <div className='detail'>
-            <img src={recipe?.image_url} alt={recipe?.name}/>
+            <img className='detail-image' src={recipe?.image_url} alt={recipe?.name}/>
             <div className='sub-detail'>
                 <h4 className='detail'>{recipe?.name}</h4>
                 <h5 className='detail'>Ingredients: {recipe?.ingredients}</h5>
