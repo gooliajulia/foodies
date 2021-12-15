@@ -23,7 +23,6 @@ div #layout {
     font-size: 16px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.76);
-
 }
 
 #layout p {
@@ -36,7 +35,7 @@ div #layout {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 20px;
+    padding: 10px;
     height: 100vh;
     box-sizing: border-box;
     overflow: scroll;
@@ -130,7 +129,7 @@ div.foodie-activity {
 }
 
 #layout p.foodie-recipe-name {
-    margin: 3px 3px;
+    margin: 3px 0px;
     text-align: left;
 }
 
@@ -145,6 +144,12 @@ button.view-users {
     margin-top: 20px;
     justify-self: flex-end;
 }
+
+.foodie-recipe a {
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 
