@@ -62,8 +62,11 @@ export default function Layout({currentUser, users, children}) {
                                 <p key={user.id}>{user.username}</p>
                             </div>
                             <div className='foodie-recipe'>
-                                <p className='foodie-recipe-name' >{user.recipes[0].name}</p>
-                                <img className='feed-thumbnail' src={user.recipes[0].image_url} alt={user.recipes[0].name} />
+                                <Link to={`/home/recipes/${user.recipes[0].id}`} >
+                                    <p className='foodie-recipe-name' >{user.recipes[0].name}</p>
+                                    <img className='feed-thumbnail' src={user.recipes[0].image_url} alt={user.recipes[0].name} />
+                                </Link>
+
                             </div>
                         </div>
                     )}
