@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :categories
+  resources :foods
+  resources :benefits
+  resources :ingredients
   post '/auth/login', to: 'authentications#login'
   get '/auth/verify', to: 'authentications#verify'
 
