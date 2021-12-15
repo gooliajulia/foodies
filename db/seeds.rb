@@ -28,6 +28,10 @@ Recipe.create!(name: 'Texas Hanger Steak Tacos', ingredients: 'hanger steak, kos
 # @admin
 Recipe.create!(name: 'Mediterranean Steak Bowl', ingredients: 'flank steak, chery tomatoes, red onion, romain lettuce, cucumber, kalamata olives, hummus, feta cheese, oil, lemons, greek yogurt, garlic, oregano, dill, mint, salt and pepper', user:@admin , image_url: 'https://therealfooddietitians.com/wp-content/uploads/2019/09/MediterraneanSteak-Bowls-3-e1567461547121.jpg')
 Recipe.create!(name: 'Happy tummy Smoothie', ingredients: 'kefir, coconut water, frozen white beans, frozen blueberries, frozen strawberries, ground flaxseed, vanilla plant-based protein powder', user:@admin , image_url: 'https://nutritionstripped.com/wp-content/uploads/2020/02/gut-healing-smoothie-bowl-nutritionstripped-vegan-fiber1-1346x701.jpg')
+Recipe.create!(name: 'Black Pepper Beef', ingredients: 'beef tenderloin, freshly cracked black pepper, oyster sauce, wine, soy sauce, toasted sesame oil, potato starch, vegetable oil, onion, bell pepper, garlic' , user:@admin , image_url: 'https://sp-ao.shortpixel.ai/client/to_auto,q_lossy,ret_img,w_1334/https://norecipes.com/wp-content/uploads/2017/11/black-pepper-beef-001.jpg')
+Recipe.create!(name: 'Grapefruit Sunrise Cocktail', ingredients: 'vodka, ruby red grapefruit juice, orange liqueur, lemon juice, grenadine, ruby red grapefruit wedges, rosemary sprig' , user:@admin , image_url: 'https://theblondcook.com/wp-content/uploads/2016/05/grapefruit-sunrise-cocktail-5.jpg')
+Recipe.create!(name: 'Key West Flank Steak', ingredients: 'red onion, cilantro, white wine vinegar, key lime juice, olive oil, limes, flank steak, kosher salt, pepper' , user:@admin , image_url: 'https://www.tasteofhome.com/wp-content/uploads/2019/05/Key-West-Flank-Steak_EXPS_THJJ19_55213_B02_21_5b-8.jpg?fit=700,1024')
+Recipe.create!(name: 'Quick Pickled Red Onions', ingredients: 'apple cider vinegar, red onion, red wine vinegar, kosher salt, sugar, ground allspice, red pepper flakes' , user:@admin , image_url: 'https://www.afarmgirlsdabbles.com/wp-content/uploads/2014/06/pickled-red-onions_AFarmgirlsDabbles_AFD-1.jpg')
 
 
 # Randomly Generate Recipes using Faker
