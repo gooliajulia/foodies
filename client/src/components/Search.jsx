@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Search.css';
 
 export default function Search({recipes}) {
@@ -25,10 +26,13 @@ export default function Search({recipes}) {
             </div>
             <div className='search-card-container'>
             {searchResults?.map(result => (
-                <div className='search-card'>
-                    <h3>{result.name}</h3>
-                    <img src={result.image_url} alt={result.name} />
-                </div>
+                <Link to={`/home/recipes/${result.id}`}>
+                    <div className='search-card'>
+                        <h3>{result.name}</h3>
+                        <img src={result.image_url} alt={result.name} />
+                    </div>
+                </Link>
+
             ))}
             </div>
         </div>
