@@ -46,9 +46,11 @@ export default function LogIn({handleLogin}) {
                         />
                     </label>
                 </div>
+
                 <button>Log In to My Account</button>
-                <p>No account? click <Link to='/register'>here</Link> to register.</p>
+
             </form>
+            <p>No account? click <Link to='/register'>here</Link> to register.</p>
         </div>
     )
 }

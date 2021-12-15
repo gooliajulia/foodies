@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .log-in {
-    background-image: linear-gradient(rgb(236, 222, 183),rgb(165, 102, 102));
+    background-image: linear-gradient(rgb(243, 233, 204),rgb(240, 181, 181));
     height: 100vh;
     width: 100vw;
+}
+
+div.log-in {
+    display: flex;
+    flex-direction: column;
 }
 
 .log-in h2 {
@@ -11,6 +16,10 @@
     left: 0;
     top: 0;
     margin: 20px;
+    font-family: 'Rozha One', serif;
+    color: white;
+    opacity: .65;
+    letter-spacing: 1px;
 }
 
 .log-in form {
@@ -18,7 +27,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(250,250,250, .3);
+    background-color: rgba(255, 255, 255, 0.137);
     border-radius: 15px;
     width: fit-content;
     height: fit-content;
@@ -34,10 +43,11 @@ div.log-in {
 
 .log-in button {
     width: fit-content;
-    background-color: rgba(255, 235, 205, 0.527);
-    border-radius: 15px;
+    background-color: rgba(0,0, 0,.8);
+    color: white;
+    border-radius: 25px;
     border-style: none;
-    padding: 6px 10px;
+    padding: 10px 20px;
 }
 
 .log-in .inputs {
@@ -67,6 +77,6 @@ div.log-in {
 }
 
 .log-in p {
-    font-size: 16px;
-    margin: 5px;
+    font-size: 15px;
+    margin: 15px;
 }

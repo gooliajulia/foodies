@@ -46,7 +46,7 @@
 }
 
 .recipe-form-image-container img {
-    height: 180px;
+    /* height: 180px; */
     overflow: hidden;
     margin-left: 20px;
 }
