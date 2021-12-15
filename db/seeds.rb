@@ -15,6 +15,16 @@ User.destroy_all
 
 puts "#{User.count} user accounts created!"
 
+Recipe.create!(name: 'Frozen Paloma', ingredients: 'ruby red grapefruit juice, white tequila, lime juice, simple syrup, ice, kosher salt, ruby red grapefruit wedges', user:@ina , image_url: 'https://d14iv1hjmfkv57.cloudfront.net/assets/recipes/frozen-palomas/_1200x600_crop_center-center_82_line/WEBEDIT_PALOMA_164.jpg?mtime=20210205101123&focal=none&tmtime=20210324094255')
+
+Recipe.create!(name: 'Texas Hanger Steak Tacos', ingredients: 'hanger steak, kosher salt, freshly cracked black pepper, olive oil, nopal (cactus pad), red onion, lime, fresno chile (diced), scallions, cilantro, toamto (diced), garlic, avocado, blue corn tortillas, sour cream', user:@gordon , image_url: 'https://www.gordonramsay.com/assets/Uploads/_resampled/CroppedFocusedImage192072050-50-ATW-09182.jpg')
+
+Recipe.create!(name: 'Mediterranean Steak Bowl', ingredients: 'flank steak, chery tomatoes, red onion, romain lettuce, cucumber, kalamata olives, hummus, feta cheese, oil, lemons, greek yogurt, garlic, oregano, dill, mint, salt and pepper', user:@admin , image_url: 'https://therealfooddietitians.com/wp-content/uploads/2019/09/MediterraneanSteak-Bowls-3-e1567461547121.jpg')
+
+Recipe.create!(name: 'Happy tummy Smoothie', ingredients: 'kefir, coconut water, frozen white beans, frozen blueberries, frozen strawberries, ground flaxseed, vanilla plant-based protein powder', user:@admin , image_url: 'https://nutritionstripped.com/wp-content/uploads/2020/02/gut-healing-smoothie-bowl-nutritionstripped-vegan-fiber1-1346x701.jpg')
+
+
+
 3.times do
     Recipe.create!(name: Faker::Food.dish, ingredients:  "#{Faker::Food.ingredient}, #{Faker::Food.ingredient},  #{Faker::Food.ingredient}" , user:@admin, image_url: 'https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=749&q=80')
 end

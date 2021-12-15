@@ -8,7 +8,7 @@ div.discover-recipes {
 
 div.recipe-card {
     width: fit-content;
-    height: 300px;
+    height: fit-content;
     background-color: rgba(255,255,255,.3);
     border-radius: 7px;
     padding: 15px;
@@ -26,4 +26,13 @@ h4.home-highlight {
     text-align: left;
     padding-left: 22px;
     margin: 0;
+}
+
+.recipe-card h3 {
+    margin: 0;
+}
+
+.recipe-card h4 {
+    font-size: 13px;
+    margin: 3px 0 18px 0;
 }
