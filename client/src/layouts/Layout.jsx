@@ -67,7 +67,7 @@ export default function Layout({currentUser, users, children}) {
                             </div>
                         </div>
                     )}
-                <Link to='/users'>
+                <Link to='/home/users'>
                     <button className='view-users'>View All Users</button>
                 </Link>
             </footer>

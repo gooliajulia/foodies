@@ -9,8 +9,9 @@ import './MainContainer.css'
 import CreateMealPlan from '../components/CreateMealPlan';
 import Search from '../components/Search';
 import Home from '../components/Home';
+import Users from '../components/Users';
 
-export default function MainContainer({currentUser, handleLogout}) {
+export default function MainContainer({currentUser, handleLogout, users}) {
     const [recipes, setRecipes] = useState([]);
     const history = useHistory();
 
@@ -74,6 +75,9 @@ export default function MainContainer({currentUser, handleLogout}) {
                 </Route>
                 <Route path='/home/recipes'>
                     <UserRecipes recipes={recipes}/>
+                </Route>
+                <Route path='/home/users'>
+                    <Users users={users}/>
                 </Route>
                 <Route path='/home'>
                     <Home recipes={recipes} currentUser={currentUser}/>

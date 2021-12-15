@@ -1,0 +1,13 @@
+div.users {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+.users img {
+    height: 300px;
+    object-fit: cover;
+}

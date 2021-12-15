@@ -64,7 +64,7 @@ function App() {
           <Layout 
             currentUser={currentUser} 
             users={users}>
-                  <MainContainer currentUser={currentUser} handleLogout={handleLogout}/>
+                  <MainContainer currentUser={currentUser} handleLogout={handleLogout} users={users}/>
           </Layout>
         </Route>
         <Route path='/'>
