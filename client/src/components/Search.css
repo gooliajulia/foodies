@@ -20,3 +20,36 @@ div.search {
     padding: 20px;
 }
 
+div.search-card {
+    width: 300px;
+    height: 310px;
+    background-color: rgba(255,255,255,.3);
+    border-radius: 25px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.search-card-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.search-card h3 {
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+.search-card h4 {
+    font-size: 12px;
+}
+
+.search-card img {
+    height: 200px;
+    object-fit: cover;
+}
