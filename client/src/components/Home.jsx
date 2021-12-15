@@ -7,7 +7,7 @@ export default function Home({recipes, currentUser}) {
 
     useEffect(()=> {
         if (recipes.length) {
-            setIngredientHighlight(recipes[Math.floor(Math.random()*3)].ingredients.split(', ')[Math.floor(Math.random()*3)]);
+            setIngredientHighlight(recipes[Math.floor(Math.random()*4)].ingredients.split(', ')[Math.floor(Math.random()*4)]);
         }
     }, [recipes])
     return (
