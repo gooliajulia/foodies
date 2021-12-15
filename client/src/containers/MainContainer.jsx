@@ -2,7 +2,7 @@ import { Switch, Route, useHistory } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import CreateRecipe from '../components/CreateRecipe';
 import { postRecipe, getRecipes, deleteRecipe, putRecipe } from '../services/recipe'
-import UserRecipes from '../components/UserRecipes';
+import UsersRecipes from '../components/UsersRecipes';
 import RecipeDetail from '../components/RecipeDetail';
 import RecipeEdit from '../components/RecipeEdit';
 import './MainContainer.css'
@@ -10,6 +10,7 @@ import CreateMealPlan from '../components/CreateMealPlan';
 import Search from '../components/Search';
 import Home from '../components/Home';
 import Users from '../components/Users';
+import UserRecipes from '../components/UserRecipes';
 
 export default function MainContainer({currentUser, handleLogout, users}) {
     const [recipes, setRecipes] = useState([]);
@@ -67,6 +68,9 @@ export default function MainContainer({currentUser, handleLogout, users}) {
                 <Route path='/home/meal-plans/new'>
                     <CreateMealPlan />
                 </Route>
+                <Route path='/home/my-recipes'>
+                    <UserRecipes currentUser={currentUser} recipes={recipes}/>
+                </Route>
                 <Route path='/home/search'>
                     <Search recipes={recipes}/>
                 </Route>
@@ -74,7 +78,7 @@ export default function MainContainer({currentUser, handleLogout, users}) {
                     <RecipeDetail recipes={recipes} handleRecipeDelete={handleRecipeDelete} currentUser={currentUser}/>
                 </Route>
                 <Route path='/home/recipes'>
-                    <UserRecipes recipes={recipes}/>
+                    <UsersRecipes recipes={recipes}/>
                 </Route>
                 <Route path='/home/users'>
                     <Users users={users}/>

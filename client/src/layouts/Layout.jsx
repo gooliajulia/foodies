@@ -15,7 +15,7 @@ export default function Layout({currentUser, users, children}) {
                         <Link className='nav' to='/home/search'>
                         <img className='icon' src="https://img.icons8.com/ios/48/000000/search.png" alt='magnifying glass'/><p>Search</p>
                         </Link>
-                        <Link className='nav' to='/home/recipes'>
+                        <Link className='nav' to='/home/my-recipes'>
                         <img className='icon' src="https://img.icons8.com/windows/32/000000/grip-lines-vertical.png" alt='lines'/><p>Recipe Box</p></Link>
                         <br/>
                         <Link to='/home/recipes/new' className='nav'>
@@ -66,7 +66,6 @@ export default function Layout({currentUser, users, children}) {
                                     <p className='foodie-recipe-name' >{user.recipes[0].name}</p>
                                     <img className='feed-thumbnail' src={user.recipes[0].image_url} alt={user.recipes[0].name} />
                                 </Link>
-
                             </div>
                         </div>
                     )}
