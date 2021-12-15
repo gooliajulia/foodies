@@ -39,6 +39,7 @@ div #layout {
     height: 100vh;
     box-sizing: border-box;
     overflow: scroll;
+    width: 250px;
 }
 
 /* left nav icons */
