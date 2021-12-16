@@ -141,6 +141,30 @@ hr.solid {
 
 }
 
+@media  screen and (max-width: 820px) {
+  #layout p {
+    display: none;
+  }
+
+  #layout p.first {
+    display:inline;
+    width: 30vw;
+  }
+
+  #layout p.center {
+    display: inline;
+  }
+
+  h4.third {
+    display: none;
+  }
+
+  div.search-bar {
+    margin-right: 0;
+    width: 80vw;
+  }
+}
+
 @media  screen and (max-width: 450px) {
 
   footer h3 {
