@@ -30,6 +30,7 @@ h4.home-highlight {
 
 .recipe-card h3 {
     margin: 0;
+    width: 250px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow:ellipsis;
