@@ -10,20 +10,28 @@ Recipe.destroy_all
 User.destroy_all
 
 # Create Core Users
-@admin = User.create!(username: 'Julia', password: '123456', image_url: 'https://media-exp1.licdn.com/dms/image/D4D03AQGCF9ln-ItOJg/profile-displayphoto-shrink_400_400/0/1637721714007?e=1645056000&v=beta&t=i3JzwEg3UcWhA7d8sTImJF1Zyr33fpEmzjVsZpU9s3U')
+@admin = User.create!(username: 'Julia', password: 'pawpaw', image_url: 'https://media-exp1.licdn.com/dms/image/D4D03AQGCF9ln-ItOJg/profile-displayphoto-shrink_400_400/0/1637721714007?e=1645056000&v=beta&t=i3JzwEg3UcWhA7d8sTImJF1Zyr33fpEmzjVsZpU9s3U')
 @gordon = User.create!(username: 'Gordon Ramsay', password: 'gordon', image_url: 'https://yt3.ggpht.com/bFpwiiOB_NLCVsIcVQ9UcwBjb1RzipnMmtNfLSWpeIaHboyGkBCq4KBitmovRbStk9WvIWIZOyo=s900-c-k-c0x00ffffff-no-rj')
 @ina = User.create!(username: 'Ina Garten', password: 'garten', image_url: 'https://www.chatelaine.com/wp-content/uploads/2018/01/ina2.jpg')
+@richard = User.create!(username: 'Richard Blais', password: 'richard', image_url: 'https://images-na.ssl-images-amazon.com/images/I/91RMftp5zRL._SX450_.jpg')
+@harold = User.create!(username: 'Harold Dieterle', password: 'harold', image_url: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2012%2F09%2Fimages-sys-201111-a-harold-dieterle.jpg&q=85')
 
 puts "#{User.count} user accounts created!"
 
 # Create Core Users Recipes
+
+# @harold
+Recipe.create!(name: 'Thai Shrimp and Coconut Soup with Lemongrass', ingredients: 'chile peppers, lemongrass, garlic, ginger, shallot, coconut oil, coconut milk, brown sugar, asian fish sauce, kaffir, lime juice, black pepper, shrimp, rice', user: @harold, image_url: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https://static.onecms.io/wp-content/uploads/sites/9/2013/12/06/201111-xl-thai-shrimp-and-coconut-soup-with-lemongrass.jpg')
+
+# @richard
+Recipe.create!(name:'Ginger-Lime Baby Carrots', ingredients: 'carrots, olive oil, ginger, cinnamon, chicken stock, butter, lime juice, sriracha, salt', user:@richard, image_url: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https://static.onecms.io/wp-content/uploads/sites/9/2013/12/06/201106-xl-ginger-lime-carrots.jpg')
 
 # @ina
 Recipe.create!(name: 'Frozen Paloma', ingredients: 'ruby red grapefruit juice, tequila, lime juice, simple syrup, ice, kosher salt, ruby red grapefruit wedges', user:@ina , image_url: 'https://d14iv1hjmfkv57.cloudfront.net/assets/recipes/frozen-palomas/_1200x600_crop_center-center_82_line/WEBEDIT_PALOMA_164.jpg?mtime=20210205101123&focal=none&tmtime=20210324094255')
 
 
 # @gordon
-Recipe.create!(name: 'Texas Hanger Steak Tacos', ingredients: 'hanger steak, kosher salt, freshly cracked black pepper, olive oil, nopal (cactus pad), red onion, lime, fresno chile (diced), scallions, cilantro, toamto (diced), garlic, avocado, blue corn tortillas, sour cream', user:@gordon , image_url: 'https://www.gordonramsay.com/assets/Uploads/_resampled/CroppedFocusedImage192072050-50-ATW-09182.jpg')
+Recipe.create!(name: 'Texas Hanger Steak Tacos', ingredients: 'hanger steak, kosher salt, freshly cracked black pepper, olive oil, red onion, lime, fresno chile (diced), scallions, cilantro, toamto (diced), garlic, avocado, blue corn tortillas, sour cream', user:@gordon , image_url: 'https://www.gordonramsay.com/assets/Uploads/_resampled/CroppedFocusedImage192072050-50-ATW-09182.jpg')
 
 # @admin
 Recipe.create!(name: 'Mediterranean Steak Bowl', ingredients: 'flank steak, cherry tomatoes, red onion, romain lettuce, cucumber, kalamata olives, hummus, feta cheese, oil, lemons, greek yogurt, garlic, oregano, dill, mint, salt and pepper', user:@admin , image_url: 'https://therealfooddietitians.com/wp-content/uploads/2019/09/MediterraneanSteak-Bowls-3-e1567461547121.jpg')
